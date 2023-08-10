@@ -1,0 +1,278 @@
+:root {
+    /*primary color*/
+    --Soft__red: hsl(7, 99%, 70%);/*hover line under learn more under stand out to the right audience  */
+    --Yellow: hsl(51, 100%, 49%); /*line under learn more of the transform your brand*/
+    --Dark__desaturated__cyan: hsl(167, 40%, 24%);/*graphic design text color*/
+    --Dark__blue: hsl(198, 62%, 26%);/*photography text color*/
+    --Dark__moderate__cyan: hsl(168, 34%, 41%);/*footer text color*/
+    --footer__backgroun:hsl(167,44%, 70%);/*footer background*/
+
+/*neutral color*/
+
+    --Very__dar__desaturated__blue: hsl(212, 27%, 19%);/*titles transform your brand and stand out to the right audience */
+    --Very__dar__grayish__blue: hsl(213, 9%, 39%);
+    --Dark__grayish__blue: hsl(232, 10%, 55%);
+    --Grayish__blue: hsl(210, 4%, 67%); /*light text color*/
+    --White: hsl(0, 0%, 100%);
+    --menu__hoover:hsl(200,100%, 72%);
+/*font family*/
+    --neutural__font:'Barlow', sans-serif;
+    --bold__font:'Fraunces', serif;
+}
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:var(--neutural__font);
+    font-size: 18px;
+}
+navbar{
+    color: var(--White);
+}
+.navbar__content{
+position:absolute;
+top:0;
+left:0;
+width: 100%;
+}
+
+.header__background__image{
+  width: 100%;
+  position: relative;
+   z-index:-1;
+ 
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    margin:2rem;
+}
+    .site__name{
+        font-family: var(--neutural__font);
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .menu{
+        display: flex;
+        gap:2.5rem;
+        list-style-type: none;
+        align-items: center;
+    }
+        .menu li{
+          cursor: pointer;
+          border-radius:1.5rem;
+          padding:1rem;
+        }
+
+        .menu li:hover{
+            text-transform: uppercase;
+            background-color:var(--menu__hoover);
+        }
+        .icon-hamburger{
+            display: none;
+        }
+.site__title{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 5rem auto 0 auto ;
+    font-family: var(--bold__font);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1rem;
+    text-align: center;
+}
+
+.main__content{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.template img{
+width: 100%;
+height: auto;
+margin: 0px;
+}
+.white__bord .title,.white__bord .text,.white__bord .learn__more{
+margin:0 25%;
+}
+.white__bord .title{
+    font-family: var(--bold__font);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--Very__dar__desaturated__blue);
+}
+.white__bord .text{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: var(--Grayish__blue);
+    font-size: 1rem;
+}
+.white__bord .learn__more{
+    font-weight: 700;
+    font-size: 0.750rem;
+    text-transform: uppercase;
+    color: var(--Very__dar__desaturated__blue);
+}
+.text__on__image{
+    position: relative;
+    
+}
+.text__on__image .title{
+    position: absolute;
+    top:60%;
+    left:35%;
+    font-family: var(--bold__font);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.text__on__image .text{
+    position: absolute;
+    top:75%;
+    margin-left:40px;
+    margin-right: 40px;
+    text-align: center;
+}
+.graphical__design__template{
+    color: var(--Dark__desaturated__cyan);
+}
+.photography{
+    color:var(--Dark__blue) ;
+}
+/*Testemonial Design*/
+.testimonial{
+    text-align: center;
+    padding: 5% 8%;
+}
+.testimonial__title{
+    color:var(--Grayish__blue);
+    text-transform: uppercase;
+    font-family: var(--bold__font);
+    font-weight: 800;
+    font-size: 1.250rem;
+    letter-spacing: 0.50rem;
+    margin: 45px 0;
+}
+.testimonial__contnets{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    font-size: 1rem;
+    color: var(--Dark__grayish__blue);
+}
+.profile{
+    margin: 40px 0;
+}
+.profile__name{
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--Very__dar__desaturated__blue);
+}
+.profile__profession{
+    font-size: 0.5rem;
+    color: var(--Grayish__blue);
+}
+.testimonial img{
+    border-radius: 50%;
+    width: 20%;
+    margin-bottom: 40px;
+}
+.footer{
+    background-color: var(--footer__backgroun);
+    text-align: center;
+}
+.footer__pictures{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer__pictures img{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    }
+.logo__bottom{
+    margin: 35px 0;
+    color: aquamarine;
+}
+.footer__links{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.footer__links a{
+    text-decoration: none;
+    color: var(--Dark__moderate__cyan);
+}
+.social__media__icon{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 35px;
+}
+@media only screen and (max-width: 850px) {
+    .main__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu{
+        display: none;
+        gap:2.5rem;
+        list-style-type: none;
+        align-items: center;
+    }
+    .icon-hamburger{
+        display: flex;
+    }
+    .site__title{
+        font-size: 2rem;
+    }
+    .template {
+        width: 100%;
+        height: auto;
+        margin: 40px auto;
+        }
+        .white__bord .title,.white__bord .text,.white__bord .learn__more{
+            margin:25px 10%;
+            text-align: justify;
+            }
+        .white__bord .title{
+            text-align: center;
+        }
+        .testimonial__contnets{
+            grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+@media only screen and (max-width: 600px) {
+    .testimonial__contnets{
+        grid-template-columns: repeat(1, 1fr);
+        }
+    .footer__pictures{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        }
+
+}
+@media only screen and (max-width: 430px){
+    .text__on__image .title{
+        top:56%;
+    }
+    .text__on__image .text{
+        top:71%;
+    }
+    .footer__pictures{
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
